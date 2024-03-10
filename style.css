@@ -1,0 +1,55 @@
+
+/* bouton dark mode début */
+
+.light-mode-button {
+    background: 0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Assurez-vous que le bouton est au-dessus de tous les autres éléments */
+  }
+  .light-mode-button span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #dadbd6;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+  }
+  .light-mode-button span:nth-child(2) {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+  }
+  body[light-mode="dark"] {
+    background-color: black;
+  }
+  body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+    background-color: hotpink;
+    color: #141516;
+  }
+  body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+    left: 65px;
+    background-color: #141516;
+  }
+  /*bouton darkmode fin*/
+  
+  
+  
